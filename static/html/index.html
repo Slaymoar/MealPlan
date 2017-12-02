@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Meal Plan</title>
+        <link href="/static/images/favicon.ico" rel="shortcut icon">
+        <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+        <script type="text/javascript" src="/static/js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="/static/js/sprintf.js"></script>
+        <script type="text/javascript" src="/static/js/app.js"></script>
+    </head>
+
+    <body>
+        <h1><center>Meal Plan</center></h1>
+
+        <h2>New Recipe</h2>
+        <!-- div that adds a new recipe -->
+        <div id="new-recipe">
+            <div class="item">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" />
+            </div>
+            <div class="item">
+                <label for="author">Author:</label>
+                <input type="text" name="author" id="author" />
+            </div>
+            <div class="item">
+                <label for="total_time:">Ready in:</label>
+                <input type="text" name="total_time" id="total_time" />
+            </div>
+            <div class="item">
+                <label for="serves">Serves:</label>
+                <input type="text" name="serves" id="serves" />
+            </div>
+            <div class="item">
+                <button title="Add Step" id="addStep" name="addStep">AddStep</button>
+            </div>
+            <div class="item">
+                <button title="Submit" id="submit" name="submit">Submit</button>
+            </div>
+        </div>
+
+        <div id="messages" align="center">
+            <!--messages go here-->
+        </div>
+
+        <h2>Recipes</h2>
+        <!-- List all recipes -->
+        <div id="recipes">
+        </div>
+
+    </body>
+
+</html>
